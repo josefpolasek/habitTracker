@@ -1,6 +1,14 @@
 body {
   margin: 0;
-  font-family: "Apple SD Gothic Neo";
+  /* font-family: ""; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+.NavbarItem{
+  background-color: aqua;
 }
