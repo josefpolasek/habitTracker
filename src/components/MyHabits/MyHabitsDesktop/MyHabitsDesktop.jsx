@@ -113,14 +113,15 @@ const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    border-bottom: dashed black;
 `;
 
 const ProfileContainer = styled.div`
     height: 100%;
     width: 200px;
 
-
-    
+    margin-left: 100px;
 
     display: flex;
     flex-direction: column;
@@ -129,7 +130,7 @@ const ProfileContainer = styled.div`
 `
 
 const ProfilePicture = styled.div`
-    height: 50%;
+    height: 60%;
     width: 100px;
 
     ${flexCenter}
@@ -149,9 +150,17 @@ const ProfileName = styled.div`
     font-size: 20px;
 `
 
+const thisIsMyWhy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt nisi a mauris pulvinar, et lacinia magna fringilla. Donec id lobortis metus. Cras scelerisque malesuada sem sed dictum. Cras bibendum lectus nec consequat tristique. Maecenas eget vulputate nisl, non ultrices augue. Nam rhoncus libero sem, quis dignissim dui pellentesque ac. In odio enim, ullamcorper et tempus sodales, faucibus et justo. Pellentesque luctus posuere suscipit. Nam rhoncus, libero eget faucibus ultrices, erat enim egestas urna, ut semper ex ex et sapien. Ut et cursus diam. Vivamus malesuada ac nibh sed semper. Aliquam rhoncus tortor et felis tincidunt pretium. Nulla lacinia cursus."
+
 const WhyContainer = styled.div`
     height: 100%;
-    width: 100px;
+    width: 500px;
+
+    margin-right: 250px;
+
+    text-align: justify;
+
+    ${flexCenter}
 `
 
 const MyHabitsDesktop = () => {
@@ -184,12 +193,12 @@ const MyHabitsDesktop = () => {
                 </ProfileContainer>
 
                 <WhyContainer>
-                    Oh, hi Mark!
+                    {thisIsMyWhy}
                 </WhyContainer>
             </HeaderContainer>
 
             <MainContainer>
-                <Goals/>
+                {/* <Goals/> */}
             </MainContainer>
        </GridContainer>
     );
