@@ -215,14 +215,24 @@ const Goals = () => {
 
     const num_to_7 = [1, 2, 3, 4, 5, 6, 7];
 
+    const ironHabits = ["Meditace", "Pohyb", "🚫 ALKOHOL"]
+
     return (
         <MainContainer>
 
             <GoalsContainer>
                 <GoalItem>Den</GoalItem>
-                <GoalItem>Meditace</GoalItem>
+
+                {/* <GoalItem>Meditace</GoalItem>
                 <GoalItem>Pohyb</GoalItem>
-                <GoalItem>🚫 ALKOHOL</GoalItem>
+                <GoalItem>🚫 ALKOHOL</GoalItem> */}
+                {ironHabits.map((hab) => (
+                        <GoalItem className="pico">
+                            {hab}
+                        </GoalItem>
+                    ))}
+
+
                 <GoalItem>DOPROVODNÁ <br/> ZÁSADA 1</GoalItem>
                 <GoalItem>DOPROVODNÁ <br/> ZÁSADA 2</GoalItem>
                 <GoalItem>DOPROVODNÁ <br/> ZÁSADA 3</GoalItem>
