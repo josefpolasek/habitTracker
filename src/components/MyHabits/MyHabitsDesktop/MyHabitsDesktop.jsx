@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Goals from "components/Goals";
+import Main from "components/Main";
 
 const GridContainer = styled.div`
     // display: grid;
@@ -99,11 +99,6 @@ const NavbarItem = styled.div`
     }
 `
 
-const MainContainer = styled.div`
-    // grid-area: "main";
-`;
-
-
 ////////////////////// HEADER //////////////////////
 
 const HeaderContainer = styled.div`
@@ -197,9 +192,7 @@ const MyHabitsDesktop = () => {
                 </WhyContainer>
             </HeaderContainer>
 
-            <MainContainer>
-                {/* <Goals/> */}
-            </MainContainer>
+            <Main />
        </GridContainer>
     );
 };

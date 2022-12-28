@@ -6,9 +6,5 @@ body {
 }
 
 * {
-  outline: 1px solid red;
-}
-
-.NavbarItem{
-  background-color: aqua;
+  /* outline: 1px solid red; */
 }
